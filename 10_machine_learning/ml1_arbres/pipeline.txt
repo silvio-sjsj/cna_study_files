@@ -1,0 +1,44 @@
+to drop in the pipeline:
+
+elem_point_id
+code
+nom
+genre
+genre_desc
+categorie
+categorie_desc
+sous_categorie_desc
+code_parent
+code_parent_desc
+bien_reference
+genre_bota
+espece
+variete
+equipe
+remarques
+courrier
+identifiantplu
+typeimplantationplu
+intituleprotectionplu
+anneeabattage
+essouchement
+diametrearbre
+causeabattage
+stationmetro
+forme
+typenature
+
+portarbre
+
+
+separate geo coordinates and then drop geo_point_2d
+
+imputers:
+**stadededeveloppement (da pra imputer tudo como adulte)
+**portarbre (imputar com moda condicionada a adr_secteur)
+
+*raisondeplantation (imputar com moda condicionada a sous_categorie)
+*collectivite (usar sous_categorie para imputar structure com a mode)
+*hauteurarbre (usar coluna statededeveloppement)
+
+*structure (usar sous_categorie para imputar structure com a mode)
